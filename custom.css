@@ -9,6 +9,10 @@ td {
   border: 100px;
   position: relative;
 }
+
+h3 {
+    font-family:Times
+}
 /* Custom container */
 .container-narrow {
 margin: 0 auto;
@@ -44,6 +48,7 @@ padding: 14px 24px;
   left:15px;
   font-size: 20px;
   font-family: Arial
+  font-style: bold;
 }
 
 .links {
