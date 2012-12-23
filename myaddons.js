@@ -6,6 +6,10 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
+    $('#test').click(function() {
+        $('.top').removeClass('active');
+    });
+
     // For photos
     $('.hover').mouseenter(function() {
         $(this).fadeTo('fast',0.7);
