@@ -2,17 +2,17 @@ body {
     padding-top: 20px;
     padding-bottom: 40px;
 }
-
-td {
-  margin-right:5px;
-  margin-left:5px;
-  border: 100px;
-  position: relative;
-}
-
 h3 {
     font-family:Times
 }
+
+/* Firefox Compliant */
+img {
+    image-rendering: auto;
+    width:100%; 
+    height: auto;
+}
+
 /* Custom container */
 .container-narrow {
 margin: 0 auto;
@@ -36,7 +36,7 @@ font-size: 21px;
 padding: 14px 24px;
 }
 .hover {
-  height:133px;
+  height:auto;
   width:200px;
   opacity:0;
   position:absolute;
@@ -47,31 +47,26 @@ padding: 14px 24px;
   top:20px;
   left:15px;
   font-size: 20px;
-  font-family: Arial
+  font-family: Arial;
   font-style: bold;
 }
+.overlay a:link  {color: white;}
+.overlay a:hover {color: white;}
 
-.links {
-  color:#FFFFFF;
-}
 
 /* Found on stack overflow 
 http://stackoverflow.com/questions/1183633/can-you-overlay-a-transparent-
 div-on-an-image
 */
 div.imageSub { position: relative; }
-div.imageSub img { z-index: 1; }
+div.imageSub img { z-index: 1; width: 100%; height: auto; }
 div.imageSub div {
-position: absolute;
-bottom: 0;
-height: 133px;
-line-height: 16px;
-text-align: center;
-overflow: hidden;
-}
-div.imageSub div.label {
-z-index: 3;
-color: white;
+    position: absolute;
+    bottom: 0;
+    height: 133px;
+    line-height: 16px;
+    text-align: center;
+    overflow: hidden;
 }
 
 
