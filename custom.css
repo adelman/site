@@ -49,9 +49,14 @@ padding: 14px 24px;
   font-size: 20px;
   font-family: Arial;
   font-style: bold;
+  color:#FFFFFF;
 }
-.overlay a:link  {color: white;}
+.overlay a:link {color:#FFFFFF;}
 .overlay a:hover {color: white;}
+
+.links {
+    color:#FFFFFF;
+}
 
 
 /* Found on stack overflow 
